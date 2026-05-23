@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Descubre Cali | Certificacion de Guias</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page">
+  <!-- Background video layer -->
+  <div class="bg-video" aria-hidden="true">
+    <video
+      class="bg-video__media"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="media/cali-poster.jpg"
+    >
+      <source src="media/0522.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-video__overlay"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Descubre Cali inicio">
+        Descubre Cali
+      </a>
+      <nav class="nav" aria-label="Navegacion principal">
+        <a class="nav__link" href="#inicio">Inicio</a>
+        <a class="nav__link" href="#historia">Historia</a>
+        <a class="nav__link" href="#modulos">Modulos</a>
+        <a class="nav__link" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main" id="inicio">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title">
+          Hay una diferencia entre <em>vivir</em> en Cali y <span class="hero__title-accent">sentir Cali.</span>
+        </h1>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#historia">Descubrir ahora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro / Context Section -->
+    <section class="intro" id="historia" aria-labelledby="intro-title">
+      <div class="intro__inner">
+        <h2 class="intro__title" id="intro-title">Una ciudad que se explica con pasion</h2>
+        <p class="intro__text">
+          Cali es mas que un destino; es memoria viva, resistencia y cultura.
+          Esta certificacion forma guias con conocimiento profundo de la ciudad:
+          desde el legado indigena y colonial hasta la salsa, el arte urbano y
+          los corredores del rio. Aprende a narrar recorridos con criterio,
+          sensibilidad y un discurso que inspire confianza.
+        </p>
+        <p class="intro__text">
+          Con mentores locales, practicas en terreno y metodologia moderna,
+          obtendras una acreditacion que te posiciona como referente del turismo
+          cultural en el Valle del Cauca.
+        </p>
+      </div>
+    </section>
+
+    <!-- Feature Cards Section -->
+    <section class="features" id="modulos" aria-labelledby="features-title">
+      <div class="features__header">
+        <h2 class="features__title" id="features-title">Pilares del programa</h2>
+        <p class="features__subtitle">
+          Un plan integral que combina historia, identidad y practica guiada.
+        </p>
+      </div>
+      <div class="features__grid">
+        <article class="feature-card">
+          <img
+            class="feature-card__image"
+            src="media/sebastian.jpg"
+            alt="Arquitectura historica de Cali"
+          />
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">Historia y territorio</h3>
+            <p class="feature-card__text">
+              Lineas de tiempo claras, mapas culturales y rutas patrimoniales
+              para contar la ciudad con precision.
+            </p>
+            <button class="btn btn--primary btn--small" type="button">
+              Explorar modulo
+            </button>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <img
+            class="feature-card__image"
+            src="https://example.com/cali-cultura.jpg"
+            alt="Salsa y cultura caleña"
+          />
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">Cultura viva y simbolos</h3>
+            <p class="feature-card__text">
+              Salsa, gastronomia, arte y tradiciones para interpretar la ciudad
+              desde su identidad contemporanea.
+            </p>
+            <button class="btn btn--primary btn--small" type="button">
+              Explorar modulo
+            </button>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <img
+            class="feature-card__image"
+            src="https://example.com/cali-recorridos.jpg"
+            alt="Recorridos por el Boulevar del Rio"
+          />
+          <div class="feature-card__body">
+            <h3 class="feature-card__title">Guiado profesional</h3>
+            <p class="feature-card__text">
+              Diseno de experiencias, manejo de grupos y storytelling para tours
+              memorables.
+            </p>
+            <button class="btn btn--primary btn--small" type="button">
+              Explorar modulo
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contacto">
+    <div class="footer__inner">
+      <div class="footer__brand">Descubre Cali</div>
+      <div class="footer__links">
+        <a class="footer__link" href="#">Instagram</a>
+        <a class="footer__link" href="#">YouTube</a>
+        <a class="footer__link" href="#">Politica de privacidad</a>
+      </div>
+      <div class="footer__copy">© 2026 Descubre Cali. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
