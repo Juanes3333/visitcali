@@ -16,7 +16,7 @@ const updateHeaderState = () => {
 updateHeaderState();
 window.addEventListener("scroll", updateHeaderState, { passive: true });
 
-const cardVideos = document.querySelectorAll(".feature-card__media");
+const featureCards = document.querySelectorAll(".feature-card");
 
 const playCardVideo = (video) => {
   if (!video) {
@@ -37,9 +37,9 @@ const stopCardVideo = (video) => {
   video.pause();
 };
 
-cardVideos.forEach((video) => {
-  const card = video.closest(".feature-card");
-  if (!card) {
+featureCards.forEach((card) => {
+  const video = card.querySelector(".feature-card__media");
+  if (!video) {
     return;
   }
 
@@ -51,4 +51,5 @@ cardVideos.forEach((video) => {
   card.addEventListener("mouseleave", () => stopCardVideo(video));
   card.addEventListener("focusin", () => playCardVideo(video));
   card.addEventListener("focusout", () => stopCardVideo(video));
+  card.addEventListener("touchstart", () => playCardVideo(video), { passive: true });
 });
