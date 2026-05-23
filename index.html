@@ -7,18 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="page">
-  <!-- Background video layer -->
+  <!-- Background media layer -->
   <div class="bg-video" aria-hidden="true">
-    <video
-      class="bg-video__media"
-      autoplay
-      muted
-      loop
-      playsinline
-      poster="media/cali-poster.jpg"
-    >
-      <source src="media/0522.mp4" type="video/mp4" />
-    </video>
+    <img class="bg-video__media" src="media/nere.jpeg" alt="" />
     <div class="bg-video__overlay"></div>
   </div>
 
@@ -26,7 +17,7 @@
   <header class="site-header" id="site-header">
     <div class="site-header__inner">
       <a class="brand" href="#inicio" aria-label="Descubre Cali inicio">
-        Descubre Cali
+        <img class="brand__logo" src="media/dossier.png" alt="Descubre Cali" />
       </a>
       <nav class="nav" aria-label="Navegacion principal">
         <a class="nav__link" href="#inicio">Inicio</a>
@@ -79,64 +70,88 @@
       </div>
       <div class="features__grid">
         <article class="feature-card">
-          <img
-            class="feature-card__image"
-            src="media/sebastian.jpg"
-            alt="Arquitectura historica de Cali"
-          />
+          <video
+            class="feature-card__media"
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          >
+            <source src="media/0522.mp4" type="video/mp4" />
+          </video>
           <div class="feature-card__body">
             <h3 class="feature-card__title">Historia y territorio</h3>
             <p class="feature-card__text">
               Lineas de tiempo claras, mapas culturales y rutas patrimoniales
               para contar la ciudad con precision.
             </p>
-            <button class="btn btn--primary btn--small" type="button">
-              Explorar modulo
-            </button>
           </div>
         </article>
 
         <article class="feature-card">
-          <img
-            class="feature-card__image"
-            src="https://example.com/cali-cultura.jpg"
-            alt="Salsa y cultura caleña"
-          />
+          <video
+            class="feature-card__media"
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          >
+            <source src="media/cali-cultura.mp4" type="video/mp4" />
+          </video>
           <div class="feature-card__body">
             <h3 class="feature-card__title">Cultura viva y simbolos</h3>
             <p class="feature-card__text">
               Salsa, gastronomia, arte y tradiciones para interpretar la ciudad
               desde su identidad contemporanea.
             </p>
-            <button class="btn btn--primary btn--small" type="button">
-              Explorar modulo
-            </button>
           </div>
         </article>
 
         <article class="feature-card">
-          <img
-            class="feature-card__image"
-            src="https://example.com/cali-recorridos.jpg"
-            alt="Recorridos por el Boulevar del Rio"
-          />
+          <video
+            class="feature-card__media"
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          >
+            <source src="media/cali-recorridos.mp4" type="video/mp4" />
+          </video>
           <div class="feature-card__body">
             <h3 class="feature-card__title">Guiado profesional</h3>
             <p class="feature-card__text">
               Diseno de experiencias, manejo de grupos y storytelling para tours
               memorables.
             </p>
-            <button class="btn btn--primary btn--small" type="button">
-              Explorar modulo
-            </button>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="intro" id="historia" aria-labelledby="intro-title">
+      <div class="intro__inner">
+        <h2 class="intro__title" id="intro-title">Una ciudad que se explica con pasion</h2>
+        <p class="intro__text">
+          Cali es mas que un destino; es memoria viva, resistencia y cultura.
+          Esta certificacion forma guias con conocimiento profundo de la ciudad:
+          desde el legado indigena y colonial hasta la salsa, el arte urbano y
+          los corredores del rio. Aprende a narrar recorridos con criterio,
+          sensibilidad y un discurso que inspire confianza.
+        </p>
+        <p class="intro__text">
+          Con mentores locales, practicas en terreno y metodologia moderna,
+          obtendras una acreditacion que te posiciona como referente del turismo
+          cultural en el Valle del Cauca.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#historia">INSCRIBETE YA!</a>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="footer" id="contacto">
+  <footer class="footer" id="footer">
     <div class="footer__inner">
       <div class="footer__brand">Descubre Cali</div>
       <div class="footer__links">
